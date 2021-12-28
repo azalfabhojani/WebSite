@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+}
+nav{
+    flex: 1;
+    text-align: right;
+}
+nav ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav ul li{
+    display: inline-block;
+    margin-right: 20px;
+}
+a{
+    text-decoration: none;
+    color: #555;
+}
+p{
+    color: #555;
+}
+.container{
+    max-width: 1300px; 
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+} 
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 img{
+    max-width: 170%;
+    padding: 30px 0;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 15px 0;
+}
+.btn{
+    display: inline-block;
+    background: #423434;   
+    color: #fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;  
+    transition: background 0.5s; 
+ }  
+ .btn:hover{
+     background-color: #803f3f;
+     color: white;
+ }
+ .header{
+     /* background: radial-gradient(#ffd6d6 , #fff); */
+    background-color: rgb(226, 116, 76);
+ }
+ .header .row{
+     margin-top: 70px;
+ }
+
+               /* slider*/
+.imgSlider{
+    width: 100%;
+    height: 500px;
+    background-image: url("img.w/banner1.jpg");
+    background-size: 100% 100%;
+    box-shadow: rgba(red, green, blue, alpha)0px 8px 24px;
+    animation: changeImage 20s linear infinite;
+}
+@keyframes changeImage {
+    0%{
+        background-image: url("img.w/shop_banner_img1.jpg");
+    }
+    25%{
+        background-image: url("img.w/shop_banner_img2.jpg");
+    }
+    50%{
+        background-image: url("img.w/blog-1.jpg");
+    }
+    75%{
+        background-image: url("img.w/blog-2.jpg");
+    }
+    100%{
+        background-image: url("img.w/slider1.jpg");
+    }
+}
+
+      /* categories */
+ 
+      .categories{
+        margin: 70px 0;
+    }
+    .col-3{
+        flex-basis: 30%;
+        min-width: 250px;
+        margin-bottom: 30px;
+    }
+    .col-3 img{
+        width: 100%;
+    }
+    .small-container{
+        max-width: 1080px;
+        margin: auto;     
+        padding-left: 25px;
+        padding-right: 25px;
+    }
+    .col-4{
+        flex-basis: 25%;
+        padding: 10px;
+        min-width: 200px;
+        margin-bottom: 50px;
+        transition: transform 0.5s;
+    }
+    .col-4 img{
+        width: 100%;
+    }
+    .tittle{
+        text-align: center;
+        margin: 0 auto 70px;
+        position: relative;
+        line-height: 60px;
+        color: #555;
+    }
+    .tittle::after{
+        content: '';
+        background: #ff523b;
+        width: 100px;
+        height: 5px;
+        border-radius: 5px;
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX( -50%);
+    }
+    h4{
+        color: black;
+        font-weight: normal;
+    }
+    .col-4 p{
+        font-size: 14px;
+    }
+    /* .rating .fas{
+        /* color:#ff523b; */
+        /* background-color: orangered; */
+    /* } */ 
+     .col-4:hover{
+        transform: translatey( -5px)
+    } 
+    
+    .buy-btn:hover{
+        color: white;
+        background-color: black;
+    }
+    
+
+               /* footer    */
+             
+               footer{
+                background-color: #222222;
+                text-align: center;
+            }
+            footer h5{
+                color: #D8D8D8;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+            footer h6{
+                color: #D8D8D8;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+
+            footer li{
+                padding-bottom: 4px;
+            }
+            footer li a {
+                font-size: 0.8rem;
+                color: #999;
+            }
+            footer li a:hover{
+                color: #D8D8D8;
+            }
+            footer p{
+                color: #999;
+                font-size: 0.8rem;
+            }
+             footer .right a{
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 40px;
+                background-color: #fff;
+                margin-right:15px ;
+                cursor: pointer;
+                 display: inline-block;
+            }           
+
+
+
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
